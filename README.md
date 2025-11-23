@@ -42,8 +42,8 @@ Upon opening the repo, you may recommended to install certain extension by VS Co
 Please install these as they are required for the project to work.
 Only two extensions are required:
 
-1. C/C++ for auto-complete and error matching
-2. Serial Monitor for viewing console output
+1. `C/C++` for auto-complete and error matching
+2. `Serial Monitor` for viewing console output
 
 ## Step 4: Find or Install Your Board's Core Package
 
