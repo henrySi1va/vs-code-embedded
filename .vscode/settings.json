@@ -3,7 +3,7 @@
   "C_Cpp.intelliSenseEngine": "Tag Parser",
 
   // User Configuration
+  "arduino.project_name": "app",
   "arduino.fqbn": "esp32:esp32:nodemcu-32s",
-  "arduino.port": "COM8",
-  "arduino.project_name": "app"
+  "arduino.port": "COM8"
 }
