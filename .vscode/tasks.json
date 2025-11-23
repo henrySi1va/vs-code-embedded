@@ -1,0 +1,30 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile Sketch",
+            "type": "shell",
+            "command": "arduino-cli compile --config-file arduino-cli.yaml --fqbn ${config:arduino.fqbn} ${config:arduino.project_name}",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Upload Sketch",
+            "type": "shell",
+            "command": "arduino-cli upload --config-file arduino-cli.yaml --fqbn ${config:arduino.fqbn} -p ${config:arduino.port} ${config:arduino.project_name}",
+            "group": {
+                "kind": "none",
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}

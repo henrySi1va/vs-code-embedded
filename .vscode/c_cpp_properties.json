@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "name": "Arduino",
+      "includePath": [
+        "${workspaceFolder}/user/libraries/**",
+        "${workspaceFolder}/app"
+      ],
+      "browse": {
+        "path": [
+          "${workspaceFolder}/user/libraries/**",
+          "${workspaceFolder}/app"
+        ],
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "cStandard": "c11",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "windows-gcc-x64"
+    }
+  ],
+  "version": 4
+}
