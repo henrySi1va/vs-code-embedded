@@ -36,8 +36,7 @@ Just copy and paste the repo's URL when prompted.
 Remember to check out the `p1-escaping-arduino-ide` branch.
 
 VS Code has a very easy to use `Source Control` tab that can be accessed by clicking the branch icon the left side of the screen.
-
-You can use this repo as a template for any future projects.
+You can check out a branch by running the `Git: Checkout To ...` command from the command palette.
 
 Upon opening the repo, you may recommended to install certain extension by VS Code.
 Please install these as they are required for the project to work.
@@ -52,7 +51,7 @@ The `arduino-cli` must know which board you are using.
 In the Arduino IDE, this is done using the Boards Manager.
 The CLI uses a unique identifier for each board called the FQBN.
 
-You can search for your board's FQBN with the following command:
+You can search for your board's FQBN with the following command (you can find the terminal on the bottom of your screen or by running the `Create New Terminal` command from the command palette):
 
 ```
 arduino-cli board listall BOARD_NAME
