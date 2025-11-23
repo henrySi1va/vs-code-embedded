@@ -35,6 +35,8 @@ In VS Code, you can press `Ctrl + Shift + P` to access the Command Palette and t
 Just copy and paste the repo's URL when prompted.
 Remember to check out the `p1-escaping-arduino-ide` branch.
 
+VS Code has a very easy to use `Source Control` tab that can be accessed by clicking the branch icon the left side of the screen.
+
 You can use this repo as a template for any future projects.
 
 Upon opening the repo, you may recommended to install certain extension by VS Code.
