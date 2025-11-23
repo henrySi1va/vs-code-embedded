@@ -1,17 +1,33 @@
-# Part 1: Escaping the Arduino IDE
+# Escaping the Arduino IDE
 
-## Step 0: Download the Arduino CLI (or IDE)
+## Introduction
+
+The Arduino IDE is great for anyone starting out in embedded systems.
+However, many people will quickly find its editor experience to be lackluster and may desire features present in the wildly popular VS Code.
+
+VS Code is a modern, customizable code editor that can be extended into a full-featured development environment for a wide range of software applications.
+In fact, it can even be used for embedded systems and replace the clunky, eclipse-based editors many engineers have faced in the past.
+VS Code has AI Assistance through Copilot right in the editor which can be very helpful to those starting their journey in embedded systems.
+
+This guide serves as a first step in going deeper into the world of embedded systems by leaving the Arduino IDE and getting familiar with Arduino's command line interface, the `arduino-cli`.
+If you have never used the terminal before, don't worry.
+There are only a few terminal commands to run in this guide and it will be a great way to get your feet wet.
+
+Please note that this guide was written using a setup on Windows 11.
+This guide can be followed on Linux or Mac without much trouble, but you may run into a few obstacles that should be easily overcome (hopefully).
+
+## Step 1: Download the Arduino CLI (or IDE)
 
 Go to [Arduino's downloads](https://www.arduino.cc/en/software/) page to get the installer.
 If you already have the Arduino IDE downloaded, you already have the CLI installed.
 
 If you would like to familiarize yourself with the CLI, view the CLI's [Getting Started](https://arduino.github.io/arduino-cli/1.3/getting-started/) page.
 
-## Step 1: Download VS Code
+## Step 2: Download VS Code
 
 If you do not have VS Code already downloaded, get it [here](https://code.visualstudio.com/download).
 
-## Step 2: Clone this Repo.
+## Step 3: Clone this Repo.
 
 Clone or download this repo.
 
@@ -28,7 +44,7 @@ Only two extensions are required:
 1. C/C++ for auto-complete and error matching
 2. Serial Monitor for viewing console output
 
-## Step 3: Find or Install Your Board's Core Package
+## Step 4: Find or Install Your Board's Core Package
 
 The `arduino-cli` must know which board you are using.
 In the Arduino IDE, this is done using the Boards Manager.
@@ -66,7 +82,7 @@ arduino-cli core install CORE_PACKAGE_NAME
 Once installed, you can check if the output of `arduino-cli board list` is any different.
 There is a chance that your board still shows up as unknown, but as long as you have the correct core package installed compilation and uploading should work.
 
-## Step 4: Update The VS Code Project Settings File
+## Step 5: Update The VS Code Project Settings File
 
 VS Code allows for project specific configuration files to be placed in the `.vscode` directory.
 There are a few settings that must be updated so that the `arduino-cli` can compile and upload your code.
@@ -85,7 +101,7 @@ The port is displayed when running `arduino-cli board list`.
 Note that this port stays the same most of the time, but may change if you plug your board in when other devices are plugged in to your computer.
 Just update the setting in this file if the port every changes.
 
-## Step 5: Compile and Upload the Code
+## Step 6: Compile and Upload the Code
 
 The code for this project is located in `app/app.ino`.
 This example uses a heartbeat library to blink the onboard LED in a heartbeat pattern and prints a message to the console from a custom library.
@@ -105,7 +121,7 @@ The upload task can be accessed by opening the command palette and typing `Tasks
 
 Any errors output by the compile or upload task will be highlighted in the editor.
 
-## Step 6: Viewing Console Output
+## Step 7: Viewing Console Output
 
 This project prints a message to console every second.
 You can view the message by opening the Serial Monitor tab at the bottom of your screen.
