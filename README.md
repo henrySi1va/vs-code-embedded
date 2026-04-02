@@ -100,7 +100,7 @@ Please change it to the one you found in the previous step.
 `arduino.port` is the port your board is connected to on your computer.
 The port is displayed when running `arduino-cli board list`.
 Note that this port stays the same most of the time, but may change if you plug your board in when other devices are plugged in to your computer.
-Just update the setting in this file if the port every changes.
+Just update the setting in this file if the port ever changes.
 
 ## Step 6: Compile and Upload the Code
 
